@@ -79,7 +79,6 @@ class ApiNetwork: ObservableObject {
                     }
                 }
                 group.notify(queue: .main) {
-                    print("\(type): \(stories.count)")
                     switch type {
                     case "top":
                         self.topStories = stories.sorted(by: {$0.title! < $1.title!})

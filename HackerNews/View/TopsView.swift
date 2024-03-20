@@ -13,6 +13,7 @@ import WebKit
 struct TopsView: View {
     
     @ObservedObject var apiNetwork: ApiNetwork
+    
 
     var body: some View {
         NavigationView{
